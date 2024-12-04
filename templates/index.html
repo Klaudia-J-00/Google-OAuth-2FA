@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #FFB6C1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ name }} <img src="{{ picture }}" style="border-radius: 60px; height: 40px;"></h1>
+        <img src="static/waving-catwave.gif" alt="Cat" style="width:30vw;">
+        <br><br>
+        <a href="/logout" class="btn btn-dark">Logout</a>
+    </div>
+</body>
+</html>
